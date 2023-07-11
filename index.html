@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene background="color:black">
+            <a-camera position="0 8 20" wasd-controls-enabled="false" ></a-camera>
+
+        <a-assets>
+        <a-asset-item id="train-obj" src="./models/obj/train/Smashing Bruticus-Bombul (1)/tinker.obj"></a-asset-item>
+        <a-asset-item id="train-mtl" src="./models/obj/train/Smashing Bruticus-Bombul (1)/obj.mtl"></a-asset-item>
+        <a-asset-item id="train-gltf" src="./models/gltf/Smashing Bruticus-Bombul (1).glb"></a-asset-item>
+        <a-asset-item id="fence" src="./models/gltf/fence/scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-box
+        id="bg"
+        src="./images/bg.jpg"
+        position="0 12.48 -3.5"
+        width="100"
+        height="100">
+        </a-box>
+
+        </a-entity>
+        <a-entity obj-model="obj: #train-obj; mtl: #train-mtl" postition="5 0 0" rotation="-90 0 0" scale="0.5 0.5 0.5">
+        </a-entity>
+        </a-scene>
+    </body>
+</html>
